@@ -13,14 +13,15 @@ body, html {
 
 /* ===== Navigation ===== */
 nav {
-  display: flex;
+   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 18px 40px;
-  background: rgba(20, 20, 32, 0.85);
+  background: #232020;
+  
   backdrop-filter: blur(6px);
   position: sticky; top: 0; z-index: 20;
-  box-shadow: 0 2px 16px rgba(0,0,0);
+  box-shadow:linear-gradient(135deg,#000000, #b1b1b1,#486653, #d02727) 0 0 10px;
   animation: navDrop 0.7s cubic-bezier(.43,.79,.42,1.07);
 }
 
@@ -30,7 +31,8 @@ nav {
 }
 
 .logo img {
-  height: 52px;
+  height: 152px;
+  border-radius: 30px;
   animation: logoIn 1s cubic-bezier(.43,.79,.42,1.07);
 }
 @keyframes logoIn {
@@ -42,8 +44,9 @@ nav {
   position: relative;
   margin: 0 20px;
   color: #fff;
+  font-size: 2.1rem;
   padding: 7px 0;
-  font-weight: 500;
+  font-weight: 600;
   text-decoration: none;
   transition: color 0.18s;
 }
@@ -61,8 +64,20 @@ nav {
 .nav-links a:hover::after, .nav-links a:focus::after {
   transform: scaleX(1);
 }
-
-
+.gradient-line, .gradient-line-aboutme,.gradient-line-projects, .gradient-line-certificate{
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(to right, #000000, #4104f8, #000000);
+    border-radius: 50px;
+     
+    }
+.gradient-line-skills {
+  margin-top: 40px;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(to right, #000000, #4104f8, #000000);
+  border-radius: 50px;
+}
  /* ---- About Section Styles ---- */
     .about-section {
       background-color: transparent;
@@ -70,9 +85,8 @@ nav {
       display: flex;
       justify-content: center;
       align-items: center;
+      
     }
-
-
     .about-card {
       width: 320px;
       height: 420px;
@@ -80,11 +94,11 @@ nav {
     }
 
     .card-flip {
-       width: 100%;
+      width: 100%;
       height: 100%;
       position: relative;
       transform-style: preserve-3d;
-      animation: flip 3s infinite ease-in-out;
+      animation: flip 10s infinite ease-in-out;
     }
 
     .about-card:hover .card-flip {
@@ -130,6 +144,7 @@ nav {
      align-items: center;
      padding: 20px;
      text-align: center;
+     
      box-shadow: inset 0 0 50px rgb(0, 0, 0);
   }
 
@@ -154,10 +169,10 @@ nav {
       justify-content: center;
     }
 
-    .view-btn,
+    
     .download-btn {
       padding: 10px 14px;
-      background: #fff;
+      background: linear-gradient(90deg, #1de9b6, #006226);
       color: #333;
       text-decoration: none;
       font-weight: 60;
@@ -165,7 +180,7 @@ nav {
       transition: all 0.3s ease;
     }
 
-    .view-btn:hover,
+    
     .download-btn:hover {
       background: #7b2ff7;
       color: #fff;
@@ -217,7 +232,7 @@ nav {
        gap: 8px;
        }
 
-       .view-btn,
+       
       .download-btn {
        font-size: 14px;
        padding: 8px 12px;   
@@ -246,7 +261,7 @@ nav {
 }
 .skill-card {
   width: 124px; height: 122px;
-  background: #293846dd;
+  background: linear-gradient(135deg, #272727,#9efac1, #2a2a2a);
   border-radius: 15px;
   box-shadow: 0 2.5px 11px rgba(109, 212, 250, 0.11);
   display: flex; flex-direction: column; align-items: center; 
