@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,15 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>DIVYA-portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
- <link rel="stylesheet" href="style.css"> 
+  <!-- This line links to your external CSS file -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <video autoplay muted loop playsinline class="background-video">
-  <source src="asset/body.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-
-
+<!--  <video autoplay muted loop playsinline class="background-video">
+    <source src="asset/body.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  -->
 
   <nav>
     <div class="logo">
@@ -26,14 +27,10 @@
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
     </div>
+    
   </nav>
 
-  <header id="home" class="hero-section">
-    <video autoplay muted loop class="hero-video">
-      <source src="asset/video.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </header>
+  
 
   <section id="about" class="about-section">
     <div class="about-card">
@@ -56,148 +53,140 @@
   </section>
 
   <section id="skills" class="skills-section">
-  <h2 class="skills-title">-----My Skills-----</h2>
-  <div class="skills-grid">
-    <div class="skill-card">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
-      <h2>HTML</>
+    <h2 class="skills-title">-----My Skills-----</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+        <h2>HTML</h2>
+      </div>
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+        <p>CSS</p><br>
+      </div>
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+        <p>JavaScript</p>
+      </div>
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+        <p>React</p>
+      </div>
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+        <p>Java</p>
+      </div>
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="python">
+        <p>Python</p>
+      </div>
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="mysql">
+        <p>MySQL</p>
+      </div>
     </div>
-    <div class="skill-card">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
-      <p>CSS</p><br>
-    </div>
-    <div class="skill-card">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
-      <p>JavaScript</p>
-    </div>
-    <div class="skill-card">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
-      <p>React</p>
-    </div>
-    <div class="skill-card">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
-      <p>Java</p>
-    </div>
-    <div class="skill-card">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="python">
-      <p>Python</p>
-    </div>
-    <div class="skill-card">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="mysql">
-      <p>MySQL</p>
-    </div>
-    
-    
-  </div>
-</section>
+  </section>
 
-<section id="projects" class="projects-section">
-  <h2 class="projects-title">-----My Projects-----</h2>
-  <div class="projects-grid">
-  <div class="project-card">
-  <div class="project-content">
-    <img src="asset/task.png" alt="Project">
-    <h3>Task Management System</h3>
-    <p>A full-featured MERN stack app crafted to efficiently organize tasks, automate recurring reminders, manage priorities, and schedule deadlines. Designed with user productivity in mind, it ensures structured, stress-free daily planning for developers.
-    </p>
-    <a href="https://github.com/divyachowdaiah/task-manage" class="project-link">View Project</a>
-  </div>
-  </div>
-
-  <div class="project-card">
-  <div class="project-content">
-    <img src="https://www.petalrepublic.com/wp-content/uploads/2022/07/Chocolate-Cosmos-Cosmos-astrosanguineus.jpeg" alt="Project">
-    <h3>Chocolate Cosmos</h3>
-    <p>An elegant floral-themed e-commerce interface featuring pastel backgrounds, interactive flower cards, and responsive design. Each card presents an image, name, and short description. Soft shadows and gradients create a modern, visually pleasing user experience.
-      </p>
-      <a href="https://divyachowdaiah.github.io/chocolate_cosmon/" class="project-link">View Project</a>
-  </div>
-</div>
-  <div class="project-card">
-  <div class="project-content">
-    <img src="asset/image3.jpg" alt="Project">
-    <h3>Webpages</h3>
-    <p>Developed responsive interfaces with HTML and CSS. Incorporated semantic structure, smooth transitions, and feedback from users. Enhanced accessibility, layout clarity, and mobile-friendliness. Added modern styling and dynamic features to elevate interaction and user satisfaction.
-    </p>
-    <a href="#contact" class="project-link">View Project</a>
-  </div>
-  </div>
-  <div class="project-card">
-  <div class="project-content">
-    <img src="asset/image1.jpg" alt="Project">
-    <h3>Detection of Kidney Stone</h3>
-    <p>Built a Python-based diagnostic tool using OpenCV and TensorFlow. It processes ultrasound and CT images to detect kidney stones. The project demonstrates effective medical image analysis and supports early diagnosis with greater accuracy.
-    </p>
-    <a href="#contact" class="project-link">View Project</a>
-  </div>
-  </div>
-</div>
-</section>
-
-<section class="certifications-section">
-  <h2 class="certifications-title">-----Certifications-----</h2>
-  <div class="certifications-grid">
-    
-    <div class="cert-card">
-      <img src="asset/c4.png" alt="Certificate 3">
-      <h3>Appication Developer- web and mobile</h3>
+  <section id="projects" class="projects-section">
+    <h2 class="projects-title">-----My Projects-----</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <div class="project-content">
+          <img src="asset/task.png" alt="Project">
+          <h3>Task Management System</h3>
+          <p>A full-featured MERN stack app crafted to efficiently organize tasks, automate recurring reminders, manage priorities, and schedule deadlines. Designed with user productivity in mind, it ensures structured, stress-free daily planning for developers.</p>
+          <a href="https://github.com/divyachowdaiah/task-manage" class="project-link">View Project</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-content">
+          <img src="https://www.petalrepublic.com/wp-content/uploads/2022/07/Chocolate-Cosmos-Cosmos-astrosanguineus.jpeg" alt="Project">
+          <h3>Chocolate Cosmos</h3>
+          <p>An elegant floral-themed e-commerce interface featuring pastel backgrounds, interactive flower cards, and responsive design. Each card presents an image, name, and short description. Soft shadows and gradients create a modern, visually pleasing user experience.</p>
+          <a href="https://divyachowdaiah.github.io/chocolate_cosmon/" class="project-link">View Project</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-content">
+          <img src="asset/image.png" alt="Project">
+          <h3>Add to Cart</h3>
+          <p>This is a simple "Add to Cart" web app showcasing a pizza item with interactive quantity controls. Built with HTML, CSS, and JavaScript, it features dynamic cart updates and glowing button effects. The layout includes a pizza image, title, description, and increment/decrement buttons. It uses a dark theme with vibrant highlights for a modern look.</p>
+          <a href="https://divyachowdaiah.github.io/add/" class="project-link">View Project</a>
+        </div>
+      </div>
+      
+      <div class="project-card">
+        <div class="project-content">
+          <img src="asset/image3.jpg" alt="Project">
+          <h3>Webpages</h3>
+          <p>Developed responsive interfaces with HTML and CSS. Incorporated semantic structure, smooth transitions, and feedback from users. Enhanced accessibility, layout clarity, and mobile-friendliness. Added modern styling and dynamic features to elevate interaction and user satisfaction.</p>
+          <a href="#contact" class="project-link">View Project</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-content">
+          <img src="asset/image1.jpg" alt="Project">
+          <h3>Detection of Kidney Stone</h3>
+          <p>Built a Python-based diagnostic tool using OpenCV and TensorFlow. It processes ultrasound and CT images to detect kidney stones. The project demonstrates effective medical image analysis and supports early diagnosis with greater accuracy.</p>
+          <a href="#contact" class="project-link">View Project</a>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <div class="cert-card">
-      <img src="asset/c3.png" alt="Certificate 1">
-      <h3>Certification of Wadhwani foundation - life skills</h3>
+  <section class="certifications-section">
+    <h2 class="certifications-title">-----Certifications-----</h2>
+    <div class="certifications-grid">
+      <div class="cert-card">
+        <img src="asset/c4.png" alt="Certificate 3">
+        <h3>Appication Developer- web and mobile</h3>
+      </div>
+      <div class="cert-card">
+        <img src="asset/c3.png" alt="Certificate 1">
+        <h3>Certification of Wadhwani foundation - life skills</h3>
+      </div>
+      <div class="cert-card">
+        <img src="asset/c2.jpg" alt="Certificate 2">
+        <h3>front end developer</h3>
+      </div>
+      <div class="cert-card">
+        <img src="asset/c1.jpg" alt="Certificate 3">
+        <h3>Coding with python</h3>
+      </div>
     </div>
+  </section>
 
-    <div class="cert-card">
-      <img src="asset/c2.jpg" alt="Certificate 2">
-      <h3>front end developer</h3>
-    </div>
+  <section id="contact" class="contact-section">
+    <h2 class="contact-title">-----Contact Me-----</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+      <a href="https://www.linkedin.com/in/your-username" target="_blank" class="linkedin-link">Connect with me on LinkedIn</a>
+    </form>
+  </section>
 
-    <div class="cert-card">
-      <img src="asset/c1.jpg" alt="Certificate 3">
-      <h3>Coding with python</h3>
-    </div>
-
-  </div>
-</section>
-<section id="contact" class="contact-section">
-  <h2 class="contact-title">-----Contact Me-----</h2>
-  <form class="contact-form">
-    <input type="text" placeholder="Your Name" required>
-    <input type="email" placeholder="Your Email" required>
-    <textarea placeholder="Your Message" required></textarea>
-    <button type="submit">Send Message</button>
-    <a href="https://www.linkedin.com/in/your-username" target="_blank" class="linkedin-link">Connect with me on LinkedIn
-    </a>
-  </form>
-</section>
-  
-   
- <footer class="footer">
-  <div class="footer-container">
-    <div class="footer-social">
-      <a href="https://github.com/divyachowdaiah/" target="_blank">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="icon" />
-        <span>GitHub</span>
-      </a>
-      <a href="https://www.linkedin.com/in/c-divya-341b6324a/" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" class="icon" />
-        <span>LinkedIn</span>
-      </a>
-    </div>
-
-    <div class="footer-about">
-     <center> <h2>------Thanks for scrolling!------</h2>
-              <p>"Hope we Turning ideas into reality — let’s connect, collaborate, and code something amazing!"</p>
-      </center>
-    </div>
-
-    <div class="footer-contact">
-      <p>Email: <a href="mailto:divyactiptur@gmail.com">divyactiptur@gmail.com</a></p>
-    </div>
-  </div>
-</footer>
-
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-social">
+        <a href="https://github.com/divyachowdaiah/" target="_blank">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="icon" />
+          <span>GitHub</span>
+        </a>
+        <a href="https://www.linkedin.com/in/c-divya-341b6324a/" target="_blank">
+          <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" class="icon" />
+          <span>LinkedIn</span>
+        </a>
+      </div>
+      <div class="footer-about">
+        <center>
+          <h2>------Thanks for scrolling!------</h2>
+          <p>"Hope we Turning ideas into reality — let’s connect, collaborate, and code something amazing!"</p>
+        </center>
+      </div>
+      <div class="footer-contact">
+        <p>Email: <a href="mailto:divyactiptur@gmail.com">divyactiptur@gmail.com</a></p>
+      </div>
     </div>
   </footer>
 </body>
