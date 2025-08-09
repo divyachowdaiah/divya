@@ -44,7 +44,7 @@ nav {
 .nav-links a {
   position: relative;
   margin: 0 20px;
-  background: linear-gradient(135deg, #b2ff59, #1de9b6);
+  background: linear-gradient(135deg, #a67c00, #bf9b30,#550000);
   background-clip: text;
   color: transparent;
   font-size: 2.1rem;
@@ -57,14 +57,14 @@ nav {
   content: '';
   position: absolute; left: 0; right: 0; bottom: 0;
   height: 2.5px; border-radius: 1px;
-  background: linear-gradient(90deg,#4db6ac,#1de9b6,#fff59d);
+  background: linear-gradient(90deg, #550000);
   transform: scaleX(0);
   transition: transform 0.3s;
 }
 .nav-links a:hover, .nav-links a:focus {
-  color: #81d4fa;
+  color: #8d8a85;
   transform: scale(1.05);
-  text-shadow: 0 2px 14px rgba(29, 233, 182, 0.6);
+  text-shadow: 0 2px 14px  rgb(141,138,133);
 }
 .nav-links a:hover::after, .nav-links a:focus::after {
   transform: scaleX(1);
@@ -78,7 +78,7 @@ nav {
   height: 4px;
   border-radius: 50px;
   position: relative;
-  background: linear-gradient(to right, #000000, #4104f8, #000000);
+  background: linear-gradient(to right, #000000, #a67c00, #000000);
   overflow: hidden;
 }
 
@@ -104,7 +104,7 @@ nav {
   margin-top: 40px;
   width: 100%;
   height: 4px;
-  background: linear-gradient(to right, #000000, #4104f8, #000000);
+  background: linear-gradient(to right, #000000, #a67c00, #000000);
   border-radius: 50px;
 }
  /* ---- About Section Styles ---- */
@@ -164,7 +164,7 @@ nav {
    
 
     .card-back {
-     background: linear-gradient(135deg, #ff6a00, #ee0979);
+     background: linear-gradient(135deg,		#ffbf00);
      color: #fff;
      transform: rotateY(180deg);
      display: flex;
@@ -174,10 +174,8 @@ nav {
      padding: 20px;
      text-align: center;
      
-     box-shadow: inset 0 0 50px rgb(0, 0, 0);
+     box-shadow: inset 0 0 50px rgb(102,0,51);
   }
-
-
     .card-back h2 {
       margin-bottom: 10px;
       font-size: 22px;
@@ -277,7 +275,7 @@ nav {
   font-size: 2.15rem;
   margin-bottom: 35px;
   letter-spacing: 1.5px;
-  color: #b2ff59;
+  color:#a67c00;
   animation: textAppear 0.7s 0.1s both;
 }
 @keyframes textAppear {
@@ -290,7 +288,7 @@ nav {
 }
 .skill-card {
   width: 124px; height: 122px;
-  background: linear-gradient(135deg, #272727,#9efac1, #2a2a2a);
+  background: linear-gradient(135deg, #272727,#21294ddf, #2a2a2a);
   border-radius: 15px;
   box-shadow: 0 2.5px 11px rgba(109, 212, 250, 0.11);
   display: flex; flex-direction: column; align-items: center; 
@@ -323,14 +321,14 @@ nav {
   text-align: center;
 }
 .projects-title {
-  color: #b2ff59;
+  color: #a67c00;
   font-size: 2.1em; 
   margin-bottom: 32px;
   letter-spacing: 1.3px;
   animation: textAppear 0.7s 0.1s both; 
 }
 .project-title {
-  background: linear-gradient(135deg, #ff5959, #e9df1d);
+  background: linear-gradient(135deg, #a67c00,#bf9b30, #660033);
   background-clip: text;
   color: transparent;
   font-size: 2.1em; 
@@ -343,9 +341,9 @@ nav {
   justify-content: center; gap: 38px;
 }
 .project-card {
-  background: #263238cc;
+  background: #21294ddf;
   border-radius: 16px;
-  box-shadow: 0 3px 20px #26c6da27;
+  box-shadow: 0 3px 20px #a67c00;
   max-width: 340px; min-height: 400px;
   margin-bottom: 22px;
   transition: transform 0.25s, box-shadow 0.20s;
@@ -370,28 +368,28 @@ nav {
 
 .project-card:hover, .project-card:focus-within {
   transform: scale(1.055) translateY(-6px);
-  box-shadow: 0 12px 34px #69f0ae47;
+  box-shadow: 0 12px 34px #a67c00;
 }
 .project-content {
   padding: 29px 24px 19px 24px;
 }
 .project-content img {
   width: 95%; min-height: 120px; border-radius: 10px; margin-bottom: 13px;
-  box-shadow: 0 2px 10px #00838f55;
+  
   object-fit: cover;
 }
 .project-link {
   display: inline-block;
   margin-top: 14px;
   padding: 7px 17px;
-  background: linear-gradient(90deg,#00bfae 0,#b2ff59 100%);
+  background: linear-gradient(90deg,	#a67c00 0,#660033 100%);
   color: #222;
   border-radius: 6px;
   text-decoration: none;
   font-weight: 600;
   transition: background 0.18s, color 0.18s, box-shadow 0.18s;
 }
-.project-link:hover {background: #00bfae;color: #fff;box-shadow:0 3px 14px #a7ffeb80;}
+.project-link:hover {background: 	#a67c00;color: #fff;box-shadow:0 3px 14px #a7ffeb80;}
 
 /* ===== Certifications Section ===== */
 .certifications-section {
@@ -400,7 +398,7 @@ nav {
 }
 
 .certifications-title {
-  color: #b2ff59;
+  color: #a67c00;
   font-size: 2em;
   margin-bottom: 29px;
 }
@@ -419,6 +417,7 @@ nav {
   display: flex; flex-direction: column; align-items: center;
   animation: cardDrop 1.2s backwards;
   transition: transform 0.16s;
+  color: #ca4343;
 }
 @keyframes cardDrop {
   0% {opacity: 0; transform: translateY(65px) scale(.89);}
@@ -442,7 +441,7 @@ nav {
   box-shadow: 0 -8px 32px #00bfae13;
 }
 .contact-title {
-  color: #fff9b6; margin-bottom: 27px; font-size: 2em;
+  color: #a67c00; margin-bottom: 27px; font-size: 2em;
 }
 
 .contact-form {
@@ -466,7 +465,7 @@ nav {
 }
 .contact-form button {
   padding: 9px 22px; border-radius: 6px; border:none;
-  background: linear-gradient(90deg,#b2ff59,#1de9b6);
+  background: linear-gradient(130deg,#a67c00,#bf9b30,#660033);
   color: #222; font-weight: bold; font-size: 1rem;
   margin-top: 14px;
   cursor: pointer;
@@ -474,8 +473,8 @@ nav {
 }
 .contact-form button:hover {
   color: #fff;
-  background: #00bfae;
-  box-shadow: 0 2px 14px #1de9b683;
+  background: 	#bf9b30;
+  box-shadow: 0 2px 14px #660033;
 }
 .linkedin-link {
   margin-top: 13px; display: inline-block;
@@ -487,10 +486,10 @@ nav {
 /* ===== Footer ===== */
 .footer {
   background: #0d1821;
-  color: #e1f7fa;
+  color: 	#a67c00;
   padding: 38px 0 12px 0;
   text-align: center;
-  box-shadow: 0 -3px 22px #39e9cf40;
+  box-shadow: 0 -3px 22px 	#a67c00;
   font-size: 1.05em;
 }
 .footer-container {
@@ -507,17 +506,17 @@ nav {
   align-items: center; gap: 7px;
 }
 .footer-social a {
-  color: #fff;
+  color: 	#a67c00;
   text-decoration: none;
   margin-bottom: 7px;
   display: flex; align-items: center; gap: 6px;
   transition: color .15s;
 }
-.footer-social a:hover { color: #80d8ff;}
+.footer-social a:hover { color: 	#a67c00;}
 .footer-social .icon { width: 28px; border-radius: 8px;}
 
-.footer-about h2 { margin: 0 0 7px 0; color: #81d4fa;}
-.footer-about p { margin-bottom: 0; color: #fffdaf;}
+.footer-about h2 { margin: 0 0 7px 0; color: #660033;}
+.footer-about p { margin-bottom: 0; color: #a67c00;}
 .footer-contact { margin-top: 17px;}
 .footer-contact a { color: #00e676;}
 .footer-contact a:hover { text-decoration: underline;}
