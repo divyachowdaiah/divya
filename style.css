@@ -10,8 +10,6 @@ body, html {
   scroll-behavior: smooth;
 }
 
-
-
 /* ===== Navigation ===== */
 nav {
    display: flex;
